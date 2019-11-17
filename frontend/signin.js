@@ -1,13 +1,13 @@
 $(document).ready(() => {
     var firebaseConfig = {
-        apiKey: "AIzaSyAne_XwzSuKUCZnOfhxXY3_zV8BxbDeZ4E",
-        authDomain: "behfood-af5a2.firebaseapp.com",
-        databaseURL: "https://behfood-af5a2.firebaseio.com",
-        projectId: "behfood-af5a2",
-        storageBucket: "behfood-af5a2.appspot.com",
-        messagingSenderId: "36862253752",
-        appId: "1:36862253752:web:db58ed4e83cd84e9"
-      };
+        apiKey: "API key goes here",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: ""
+    };
       firebase.initializeApp(firebaseConfig);
 
     $("#submit_btn").click((e) => {
