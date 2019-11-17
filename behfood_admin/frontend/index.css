@@ -1,0 +1,60 @@
+body{
+    background-color: #e5e5e5;
+}
+#first_row{
+    padding-top: 1%;
+}
+ul{
+    padding-top: 2%;
+}
+#logo{
+    height: 40%;
+    width: 50%;
+}
+#address{
+    font-size: 13px;
+}
+#image{
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+#menu{
+    float: right;
+    margin-right: 10%;
+}
+li:hover{
+    cursor: pointer;
+}
+#text-row{
+    padding-top: 3%;
+}
+#search-bar{
+    padding-top: 5%;
+}
+#register_btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#signin_btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#user-manage{
+    visibility: hidden;
+}
+
+#newPost{
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+    border: 0.5px solid silver;
+    border-radius: 12px;
+}
+#loading{
+    display: none;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="post.css" />
+    
+    <title>BehFood</title>
+  </head>
+  <body>
+      <div class="container-fluid" id="first_row">
+          <div class="row">
+                <div class="col-md-2 col-sm-2">
+                   <img id="logo" class="rounded float-left" src="./logo.png">   
+                </div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div class="col-md-4 col-sm-4">
+                    <div style="text-align: center">
+                      <h8 id="register_btn">Register</h8>
+                        <h8> or </h8>
+                        <h8 id="signin_btn"> Sign in </h8>  
+                    </div>
+                    
+                </div>
+          </div>
+      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            
+                <div class="col-md-7">
+                    <div id="post-detail">
+                        <div class="row">
+                            <div class="col-md-8 title">
+                                <h3><%= title %></h3>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5" style="padding-left: 30px">
+                                    <img id="post-image" src="<%= imageurl %>">
+                                </div>
+                                
+                                <div class="col-md-5 col-sm-5" >
+                                    <h4>Description:</h4> <%= text %>
+                                    <h2></h2>
+                                    <h4>Price:</h4> <%= price %>
+                                    
+                                </div>
+                            </div>
+                               
+                        </div>
+                         
+                        <div class="row" >
+                            <div class="col-md-6">
+                                <div class="row contact-seller" >
+                                        <h5>Contact seller:</h5>
+                                    </div>
+                                    <div class="row email">
+                                        <h5><%= email.replace(',','.') %></h5>
+                                    </div>
+                                    <div class="row address">
+                                        <h5><%= city %></h5>
+                                    </div>
+                                    <div class="row address">
+                                        <h5><%= country %></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div><!--for the second column-->
+            
+            <div class="col-md-4">
+                <ul class="list-group" id="display">
+            
+                </ul>
+            </div>
+        </div><!--for first row-->
+    </div>
+      <script src="post.js"></script>
+    </body>
+    </html>

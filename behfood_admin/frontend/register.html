@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./register.css" />
+    <title>BehFood</title>
+  </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="first_row">
+                <div class="col-md-2">
+                    <img id="logo" class="rounded float-left" src="./logo.png">   
+                </div>
+                <div class="col-md-6"></div>
+                <div id="user-manage" class="col-md-4 ">
+                    <div style="text-align: center">
+                         
+                    </div>   
+                </div>
+            </div>
+
+            <!---->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div id="signin_form">
+                        <form> 
+                            <div class="form-group">
+                                <label for="email_field">Email address</label>
+                                <label for="email_field" id="email_label"></label>
+                                <input type="email" class="form-control" id="email_field" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="username" class="form-control" id="username_field" placeholder="Username">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="password_field1">Password</label>
+                                <label for="password_field1" id="password_label"></label>
+                                <input type="password" class="form-control" id="password_field1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_field2">Repeat Password</label>
+                                <input type="password" class="form-control" id="password_field2" placeholder="Password">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="submit_btn">Submit</button>
+                        </form>
+                    </div>
+                    <div id="after_signin">
+                        <h4>Congradulations!! Your account is created</h4>
+                        <button type="submit" class="btn btn-primary" id="continue_btn">Continue</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="signin_now">
+                        <h5 id="signin_text">Sign in if you already have an account!!</h5>
+                        <button type="submit" class="btn btn-primary" id="signin_btn">Sign in</button>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--firebase cdn-->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-database.js"></script>
+    <script src="register.js"></script>
+    </body>
+</html>

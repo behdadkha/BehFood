@@ -1,0 +1,67 @@
+ul{
+    padding-top: 2%;
+}
+#logo{
+    height: 40%;
+    width: 50%;
+}
+#image{
+    height: 100%;
+    width: 100%;
+}
+li:hover{
+    cursor: pointer;
+}
+#text-row{
+    padding-top: 3%;
+}
+#register_btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#signin_btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.email{
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+.address{
+    padding-left: 12%;
+}
+.contact-seller{
+    padding-left: 8%;
+}
+.title{
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%; 
+}
+.price{
+    padding-left: 4%;
+}
+#post-image{
+    padding-left: 6%;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+#post-detail{
+    border: 0.5px solid silver;
+    border-radius: 12px;
+}
+#image_suggest{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+@media only screen and (max-width: 1200px) {
+    #image_suggest {
+        width: 100%;
+        height: 60%;
+    }
+  }

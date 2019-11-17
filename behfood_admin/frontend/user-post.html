@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>BehFood</title>
+  </head>
+  <body>
+      <div class="container-fluid" >
+          <div class="row" id="first_row">
+                <div class="col-md-2 col-sm-2">
+                   <img id="logo" class="rounded float-left" src="./logo.png">   
+                </div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div id="user-manage" class="col-md-4 col-sm-4">
+                    <div style="float: right">
+                      <h8 id="register_btn">Register</h8>
+                        <h8 id="or_text"> or </h8>
+                        <h8 id="signin_btn"> Sign in </h8>
+                        <!---->
+                        <div class="dropdown">
+                            <button class="btn btn-primary" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="user-logo.png" >
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <button class="dropdown-item" id="user-email" type="button">Email</button>
+                              <button class="dropdown-item" id="user-profile" type="button">Profile</button>
+                              <button class="dropdown-item" id="user-signout" type="button">Sing out</button>
+                            </div>
+                          </div>
+                        <!---->  
+                    </div>
+                    
+                </div>
+          </div>
+          <!--not in-->
+          <div class="row" id="not-signed" style="display: none">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <div style="text-align: center">
+                <h4>Sign in to see your posts!!</h4>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div>
+                  <h4>Your Posts</h4>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <!--user's posts-->
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-5">
+                  <ul class="list-group" id="display">
+                    
+                  </ul>
+              </div>
+              <div class="col-md-3" >
+                <div id="newPost">
+                    <h6>Sell homemade foods and make money</h6>
+                    <button type="submit" class="btn btn-primary" id="post_btn">Post a New Item</button>
+                </div>
+                  
+              </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--firebase cdn-->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-database.js"></script>
+<script src="user-post.js"></script>
+</body>
+</html>

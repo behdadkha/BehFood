@@ -1,0 +1,48 @@
+body{
+    background-color: #e5e5e5;
+}
+#first_row{
+    padding-top: 1%;
+}
+#logo{
+    height: 60%;
+    width: 70%;
+}
+#signin_now{
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    border: 0.5px solid silver;
+    border-radius: 12px;
+}
+#password_label{
+    float: right;
+    padding-right: 5%;
+}
+#email_label{
+    float: right;
+    padding-right: 5%;
+}
+#signin_form{
+    margin-top: 3.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 0.5px solid silver;
+    border-radius: 12px;
+}
+#signin_text{
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 1.5vw;
+}
+#signin_btn{
+    margin-top: 4%;
+}
+#after_signin{
+    visibility: hidden;
+}

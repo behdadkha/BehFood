@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>BehFood</title>
+  </head>
+  <body>
+      <div class="container-fluid" id="first_row">
+          <div class="row">
+                <div class="col-md-2 col-sm-2">
+                   <img id="logo" class="rounded float-left" src="./logo.png">   
+                </div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div id="user-manage" class="col-md-4 col-sm-4">
+                    <div id="menu">
+                      <h8 id="register_btn">Register</h8>
+                        <h8 id="or_text"> or </h8>
+                        <h8 id="signin_btn"> Sign in </h8>
+                        <!---->
+                        <div class="dropdown">
+                            <div class="btn-group dropleft">
+                              <button class="btn btn-primary " type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="user-logo.png" >
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" id="user-email" type="button">Email</button>
+                                <button class="dropdown-item" id="user-profile" type="button">Profile</button>
+                                <button class="dropdown-item" id="user-signout" type="button">Sing out</button>
+                              </div>
+                            </div>
+                        </div>
+                        <!---->  
+                    </div>
+                    
+                </div>
+          </div>
+      </div>
+      <div class="container" id="search-bar">
+          <div class="row justify-content-center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="input-group mb-3">
+                        <input type="text" id="search_field" class="form-control" placeholder="Search Post..." aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="search_btn" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+          </div>
+      </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <ul class="list-group" id="display">
+                    
+                </ul>
+                <ul class="list-group" id="after_search">
+                  
+                </ul>
+            </div>
+            <div class="col-lg-2 "></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--firebase cdn-->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
